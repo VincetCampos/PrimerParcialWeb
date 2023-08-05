@@ -1,0 +1,57 @@
+.menu1{
+    display: flex;
+    justify-content: center;
+}
+
+.listado li{
+    font-size: 14px;
+    margin: 2px;
+    padding: 2px;
+    color: blue;
+}
+
+.listado li:hover{
+    font-size: 22px;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: column;
+}
+.columna1{
+    display: flex;
+    margin: 50px;
+    background-color: gainsboro;
+    padding: 20px;
+}
+.columna2{
+    display: flex;
+    margin: 50px;
+    background-color: gainsboro;
+}
+.columna3{
+    display: flex;
+    margin: 50px;
+    background-color: gainsboro;
+}
+
+.tarjeta1{
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+    font: 150% arial;
+}
+
+.tarjeta2{
+    padding: 10px;
+    margin: 10px;
+    background-color: pink;
+    font: 100% arial;
+}
+
+.tarjeta3{
+    padding: 10px;
+    margin: 10px;
+    background-color: yellow;
+    font: 200% arial;
+}
