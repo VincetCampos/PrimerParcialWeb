@@ -5,26 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>columnas</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function allowDrop(ev){
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
 </head>
 <body>
     <div class="columnas">
-        <div class="columna1">
-            <div class="tarjeta1">
-                <img src="imagenes/fondo.jpg">
+        <div class="columna1" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="tarjeta1"  id="column1" draggable="true" ondragstart="drag(event)">
                 <p>Info primera tarjeta</p>
             </div>
+            <button class="boton">Agregar Tarea</button>
         </div>
-        <div class="columna2">
-            <div class="tarjeta2">
-                <img src="imagenes/fondo.jpg">
+        <div class="columna2" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="tarjeta2" id="column2" draggable="true" ondragstart="drag(event)">
                 <p>Informacion de la tarjeta 2</p>
             </div>
+            <button class="boton">Agregar Tarea</button>
         </div>
-        <div class="columna3">
-            <div class="tarjeta3">
-                <img src="imagenes/fondo.jpg">
+        <div class="columna3" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="tarjeta3" id="column3" draggable="true" ondragstart="drag(event)">
                 <p>Informacion de la tercera tarjeta</p>
             </div>
+            <button class="boton">Agregar Tarea</button>
         </div>
     </div>
 </body>

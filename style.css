@@ -16,23 +16,28 @@
 
 .columnas{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .columna1{
     display: flex;
     margin: 50px;
     background-color: gainsboro;
     padding: 20px;
+    flex-direction: column;
 }
 .columna2{
     display: flex;
     margin: 50px;
     background-color: gainsboro;
+    padding: 20px;
+    flex-direction: column;
 }
 .columna3{
     display: flex;
     margin: 50px;
     background-color: gainsboro;
+    padding: 20px;
+    flex-direction: column;
 }
 
 .tarjeta1{
@@ -54,4 +59,9 @@
     margin: 10px;
     background-color: yellow;
     font: 200% arial;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
 }
