@@ -51,17 +51,19 @@
     padding: 10px;
     margin: 10px;
     background-color: pink;
-    font: 100% arial;
+    font: 150% arial;
 }
 
 .tarjeta3{
     padding: 10px;
     margin: 10px;
     background-color: yellow;
-    font: 200% arial;
+    font: 150% arial;
 }
 
 .boton{
     display: flex;
     justify-content: center;
+    position: static;
+    bottom: 0;
 }
